@@ -1,0 +1,29 @@
+[
+  {
+    "id": "devfest-ua-summary",
+    "title": "GDG DevFest West Cameroon",
+    "posted": "2015-10-24",
+    "primaryColor": "#5a7785",
+    "secondaryColor": "#455a64",
+    "image": "/images/backgrounds/devfestWest.jpg",
+    "brief": "GDG DevFest West Cameroon"
+  },
+  {
+    "id": "devfest-2016-announced",
+    "title": "GDG DevFest 2016 Announced",
+    "posted": "2016-05-04",
+    "primaryColor": "#00BCD4",
+    "secondaryColor": "#00BCD4",
+    "image": "/images/posts/announce.jpg",
+    "brief": "Ukrainian Google Developers Groups are proud to announce the fifth annual GDG DevFest 2016 which is the biggest Google related event in Ukraine carefully crafted by GDG community! The event will take place on **9-10th of September** in **Lviv**."
+  },
+  {
+    "id": "c4p-time",
+    "title": "Nguon 2016 ",
+    "posted": "2016-05-06",
+    "primaryColor": "#3F51B5",
+    "secondaryColor": "#3F51B5",
+    "image": "/images/backgrounds/nguon2016.jpg",
+    "brief": "<h1>THEME:   LEVIER DE CONSOLIDATION DE LA PAIX ET DU DEVELOPPEMENT</h1>\n "
+  }
+]

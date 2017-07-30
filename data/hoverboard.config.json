@@ -1,0 +1,263 @@
+
+{
+  "firebase": {
+    "name": "GDG Foumban",
+    "domain": "gdgfoumban-2016.firebaseapp.com",
+    "database": "https://gdgfoumban-2016.firebaseio.com",
+    "api": "AIzaSyDNSmzmNwbZ4ijvt0Vl7DoqnwlDi5dPDCY",
+    "userSessionsPath": "/userSessions"
+  },
+  "pages": {
+    "home": {
+      "headerSettings": {
+        "backgroundColor": "#FF9800",
+        "backgroundImage": "/images/backgrounds/background.png",
+        "fontColor": "#fff",
+        "tabBarColor": "#fff",
+        "video": {
+          "title": "GDG Foumban",
+          "youtubeId": "TdpbgRgz6eE",
+          "text": "See how it was in 2016"
+        },
+        "hideLogo": false,
+        "minHeight": "360px"
+      }
+    },
+    "blog": {
+      "headerSettings": {
+        "backgroundColor": "#03a9f4",
+        "fontColor": "#fff",
+        "tabBarColor": "#fff"
+      }
+    },
+    "speakers": {
+      "headerSettings": {
+        "backgroundColor": "#3f51b5",
+        "fontColor": "#fff",
+        "tabBarColor": "#fff"
+      }
+    },
+    "schedule": {
+      "headerSettings": {
+        "backgroundColor": "#673ab7",
+        "fontColor": "#fff",
+        "tabBarColor": "#fff"
+      }
+    },
+    "team": {
+      "headerSettings": {
+        "backgroundColor": "#009688",
+        "fontColor": "#fff",
+        "tabBarColor": "#fff"
+      }
+    },
+    "cod": {
+      "headerSettings": {
+        "backgroundColor": "#673ab7",
+        "fontColor": "#fff",
+        "tabBarColor": "#fff"
+      }
+    }
+  },
+  "navigation": [
+    {
+      "route": "home",
+      "permalink": "/"
+    },
+    {
+      "route": "blog",
+      "permalink": "/blog/"
+    },
+    {
+      "route": "speakers",
+      "permalink": "/speakers/"
+    },
+    {
+      "route": "team",
+      "permalink": "/team/"
+    }
+  ],
+  "url": "https://gdgfoumban.org",
+  "mailchimp": {
+    "url": "https://gdg.us11.list-manage.com/subscribe/post?u=b7e853a79164ddfdbda3ed77b&amp;id=7993e39fbe",
+    "name": "b_b7e853a79164ddfdbda3ed77b_7993e39fbe"
+  },
+  "partnershipProposition": "http://bit.ly/df16-sponsor",
+  "disqusShortName": "hoverboard-gdg-x",
+  "languages": [
+      {
+      "name": "français",
+      "key": "fr"
+    },
+    {
+      "name": "English",
+      "key": "en"
+    }
+  ],
+  "footerBlocks": [
+    {
+      "title": "for-visitors",
+      "links": [
+        {
+          "text": "team",
+          "url": "/team/"
+        },
+        {
+          "text": "cod",
+          "url": "/cod/"
+        },
+        {
+          "text": "google-developers",
+          "url": "https://developers.google.com/",
+          "newTab": true
+        },
+        {
+          "text": "past-events",
+          "url": "/past-events/",
+          "newTab": true
+        },
+        {
+          "text": "df-14",
+          "url": "http://devfest.gdg.org.ua/2014/",
+          "newTab": true
+        },
+        {
+          "text": "df-15",
+          "url": "http://devfest.gdg.org.ua/2015/",
+          "newTab": true
+        }
+      ]
+    },
+    {
+      "title": "for-partners",
+      "links": [
+        {
+          "text": "partnership-proposition",
+          "url": "http://bit.ly/df16-sponsor",
+          "newTab": true
+        },
+        {
+          "text": "media-kit",
+          "url": "http://bit.ly/df16-media",
+          "newTab": true
+        }
+      ]
+    }
+  ],
+  "contactBlock": {
+    "links": [
+      {
+        "text": "devfest@google.com",
+        "url": "mailto:devfest@google.com"
+      }
+    ]
+  },
+  "tickets": {
+    "url": "http://2event.com/events/630032",
+    "elements": [
+      {
+        "name": "student-ticket",
+        "price": 500,
+        "currency": "₴",
+        "starts": "student-ticket-starts",
+        "ends": "student-ticket-ends",
+        "info": "student-ticket-info",
+        "soldOut": false
+      },
+      {
+        "name": "early-ticket",
+        "price": 750,
+        "currency": "₴",
+        "starts": "early-ticket-starts",
+        "ends": "early-ticket-ends",
+        "info": "early-ticket-info",
+        "soldOut": true
+      },
+      {
+        "name": "lazy-ticket",
+        "price": 1000,
+        "currency": "₴",
+        "starts": "lazy-ticket-starts",
+        "ends": "lazy-ticket-ends",
+        "soldOut": false
+      }
+    ]
+  },
+  "teamPageTitle": "team-page-title",
+  "teamPageText": "team-page-text",
+  "statistics": [
+    {
+      "counter": 15,
+      "caption": "attendees"
+    },
+    {
+      "counter": 2,
+      "caption": "days"
+    },
+    {
+      "counter": 13,
+      "caption": "sessions"
+    },
+    {
+      "counter": 3,
+      "caption": "tracks"
+    }
+  ],
+  "hashtag": "GDGFoumban",
+  "social": [
+    {
+      "name": "twitter",
+      "nickname": "GDGFoumban",
+      "url": "https://twitter.com/GDGFoumban"
+    },
+    {
+      "name": "gplus",
+      "nickname": "101655900172336891178",
+      "url": "https://plus.google.com/u/0/b/101655900172336891178/101655900172336891178/posts"
+    },
+    {
+      "name": "facebook",
+      "nickname": "GDGFoumban",
+      "url": "https://www.facebook.com/GDGfoumban/"
+    },
+    {
+      "name": "linkedin",
+      "nickname": "google-developers-group-foumban",
+      "url": "#"
+    }
+  ],
+  "tweetsSource": "/data/tweets.json",
+  "gallery": {
+    "albumUrl": "https://plus.google.com/b/101655900172336891178/photos/101655900172336891178/album/6307964166029504193",
+    "photos": {
+      "big": "/images/backgrounds/big.jpg",
+      "small": [
+        "/images/backgrounds/2015_2.jpg",
+        "/images/backgrounds/2015_3.jpg"
+      ]
+    }
+  },
+  "location": {
+     "apiKey": "AIzaSyCiLJ5uJ29Rl6VoGb5YzpeS41SWtSDaRGc",
+    "link": "https://www.facebook.com/CHM-salle-de-f%C3%AAte-111350885618200/",
+    "pointer": {
+      "latitude": 5.720460,
+      "longitude": 10.901268,
+      "zoom": 12
+    },
+    "mapCenter": {
+      "latitude": 5.720460,
+      "longitude": 10.901268
+    },
+    "images": [
+      "/images/backgrounds/location_1.jpg",
+      "/images/backgrounds/location_2.jpg",
+      "/images/backgrounds/location_3.jpg"
+    ]
+  },
+  "videosSessionsUrl": "https://www.youtube.com/channel/UCU4kkC6QldtsOklSvvijtcg",
+  "callToAction": {
+    "videoTitle": "action-title",
+    "videoId": "DfMnJAzOFng"
+  }
+}
