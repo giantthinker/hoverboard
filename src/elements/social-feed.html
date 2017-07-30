@@ -4,7 +4,10 @@
 
 <link rel="import" href="../../bower_components/paper-icon-button/paper-icon-button.html">
 
+<<<<<<< HEAD
 <link rel="import" href="../behaviors/localize-behavior.html">
+=======
+>>>>>>> upstream/master
 <link rel="import" href="social-post.html">
 
 
@@ -53,19 +56,28 @@
 
     <iron-ajax
       auto
+<<<<<<< HEAD
       url="[[app.data.tweetsSource]]"
+=======
+      url="{$ tweetsSource $}"
+>>>>>>> upstream/master
       handle-as="json"
       last-response="{{_posts}}"
     ></iron-ajax>
     <div class="container">
       <div class="social-section">
+<<<<<<< HEAD
         <h4 class="heading">[[localize('before-hashtag')]] <a href$="https://www.google.com/#q=%23[[app.data.hashtag]]">#[[app.data.hashtag]]</a></h4>
+=======
+        <h4 class="heading">{$ beforeHashtag $} <a href="https://www.google.com/#q=%23{$ hashtag $}">#{$ hashtag $}</a></h4>
+>>>>>>> upstream/master
         <h5>[[response.response]]</h5>
         <social-post id="post" author="[[author]]" text="[[text]]" when="[[when]]" canonical-url="https://twitter.com/"
                      sign="@"></social-post>
       </div>
       <span class="divider"></span>
       <div class="social-section">
+<<<<<<< HEAD
         <h4 class="heading">[[localize('social-title')]]</h4>
         <div>[[localize('social-motto')]]</div>
         <div class="align-pb-block">
@@ -74,6 +86,16 @@
               <paper-icon-button icon="[[network.name]]"></paper-icon-button>
             </a>
           </template>
+=======
+        <h4 class="heading">{$ socialTitle $}</h4>
+        <div>{$ socialMotto $}</div>
+        <div class="align-pb-block">
+          {% for network in social %}
+          <a class="button-link" href="{$ network.url $}" target="_blank" rel="noopener noreferrer">
+            <paper-icon-button icon="{$ network.name $}"></paper-icon-button>
+          </a>
+          {% endfor %}
+>>>>>>> upstream/master
         </div>
       </div>
     </div>
@@ -88,10 +110,13 @@
 
         is: 'social-feed',
 
+<<<<<<< HEAD
         behaviors: [
           HOVERBOARD.LocalizeBehavior
         ],
 
+=======
+>>>>>>> upstream/master
         properties: {
           interval: {
             type: Number,

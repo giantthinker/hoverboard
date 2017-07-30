@@ -19,7 +19,10 @@ from [GDG Lviv](http://lviv.gdg.org.ua/).
 :white_check_mark: Polymer  
 :white_check_mark: [PRPL pattern](https://www.polymer-project.org/1.0/toolbox/server)  
 :white_check_mark: Offline access  
+<<<<<<< HEAD
 :white_check_mark: i18n  
+=======
+>>>>>>> upstream/master
 :white_check_mark: Material design  
 :white_check_mark: Animations  
 :white_check_mark: Integrated speakers and sessions management  
@@ -27,11 +30,18 @@ from [GDG Lviv](http://lviv.gdg.org.ua/).
 :white_check_mark: Optimized and fast  
 :white_check_mark: Editable theme colors  
 :white_check_mark: Quick deploy (with [Travis CI](/docs/tutorials/deploy.md))  
+<<<<<<< HEAD
 :white_check_mark: My schedule :new:
+=======
+:white_check_mark: My schedule  
+:white_check_mark: Firebase Data Loading :new:  
+:white_check_mark: Sessions star rating :new:  
+>>>>>>> upstream/master
 
 ### Setup
 :book: [Full documentation](/docs/).
 
+<<<<<<< HEAD
 ##### Docker based development env
 
 If you don't want to bother with the dependencies, you can develop in the docker container.
@@ -56,10 +66,25 @@ and [Bower](https://bower.io/):
 
     npm i -g bower
 
+=======
+##### Docker-based development environment
+
+If you don't want to bother with the dependencies, you can use the docker container for development.
+
+Build the docker image:
+
+    docker build -t hoverboard .
+
+and execute the commands associated to the docker env in the following documentation:
+
+:book: Read more in [docker docs](/docs/tutorials/docker.md).
+
+>>>>>>> upstream/master
 :point_right: **[Fork](https://github.com/gdg-x/hoverboard/fork) this repository** and clone it locally.
 
 ##### Install dependencies
 
+<<<<<<< HEAD
     bower install
 
 ##### Start the development server
@@ -68,6 +93,24 @@ This command serves the app at `http://localhost:8080` and provides basic URL
 routing for the app:
 
     polymer serve
+=======
+    npm install
+    
+Or you can install with Docker container: 
+     
+    docker run -v "$PWD":/app hoverboard npm install 
+
+##### Start the development server
+
+This command serves the app at `http://localhost:3000` and provides basic URL
+routing for the app:
+
+    npm run serve
+    
+Or you can serve Docker container:
+
+    docker run -v "$PWD":/app hoverboard
+>>>>>>> upstream/master
 
 :book: Read more in [setup docs](/docs/tutorials/set-up.md).
 
@@ -77,6 +120,7 @@ routing for the app:
 This command performs HTML, CSS, and JS minification on the application
 dependencies, and generates a service-worker.js file with code to pre-cache the
 dependencies based on the entrypoint and fragments specified in `polymer.json`.
+<<<<<<< HEAD
 The minified files are output to the `build/unbundled` folder, and are suitable
 for serving from a HTTP/2+Push compatible server.
 
@@ -89,6 +133,15 @@ H2/push-compatible servers or to clients that do not support H2/Push.
 Or you can build in Docker container:
 
     docker run -v "$PWD":/app hoverboard polymer build
+=======
+The minified files are output to the `build`.
+
+    npm run build
+
+Or you can build in Docker container:
+
+    docker run -v "$PWD":/app hoverboard npm run build
+>>>>>>> upstream/master
 
 :book: Read more in [deploy docs](/docs/tutorials/deploy.md).   
 
@@ -123,12 +176,21 @@ pull request, so we can include you in this list.
 | [GDG DevFest NYC 2016](https://devfestnyc.com/)                 | [GDG DevFest Los Angeles 2016](https://devfest.gdgla.org/)                  | [GDG DevFest West](https://devfest2016.gdgsv.com)           |
 | [GDG DevFest Florida 2016](https://devfestflorida.org)          | [GDG DevFest Madrid 2016](https://gdgmadrid.com)                            | [GDG DevFest SBA 2016](https://devfest.gdgsba.org/)         |
 | [GDG Foumban Website](https://gdgfoumban.org)                   | [GDG DevFest Granada 2016](http://devfest.gdggranada.com/)                  | [GDG DevFest Taipei 2016](http://devfest.gdg-taipei.org/)    |
+<<<<<<< HEAD
 | [2016 Valley DevFest](https://valleydevfest.com)                |
 
 
 ### Roadmap :rocket:
 :x: Admin panel  
 :x: Firebase Integration   
+=======
+| [2016 Valley DevFest](https://valleydevfest.com)                | [IWDC 2017 Fresno (WTM)](https://iwdc.wtmfresno.com/)                       | [ngVikings 2017](https://ngvikings.org)
+| [Mobile Era 2017](https://mobileera.rocks)                      | [DevFest Nantes 2017](https://devfest.gdgnantes.com)                   |                
+
+
+### Roadmap :rocket:
+:x: Admin panel    
+>>>>>>> upstream/master
 :x: Push notification  
 :x: ES2015  
 :x: Accessibility  
@@ -159,7 +221,11 @@ See [list of contributors](https://github.com/gdg-x/hoverboard/graphs/contributo
 __Maintainer:__ [Oleh Zasadnyy](https://github.com/ozasadnyy) and [Sophie Huts](https://github.com/sophieH29).
 
 
+<<<<<<< HEAD
 ######The GDG App, GDG[x] are not endorsed and/or supported by Google, the corporation.
+=======
+###### The GDG App, GDG[x] are not endorsed and/or supported by Google, the corporation.
+>>>>>>> upstream/master
 
 
 ### License

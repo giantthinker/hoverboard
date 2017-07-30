@@ -7,7 +7,10 @@
 <link rel="import" href="../../bower_components/neon-animation/neon-animated-pages.html">
 
 <link rel="import" href="../styles/shared-styles.html">
+<<<<<<< HEAD
 <link rel="import" href="../behaviors/localize-behavior.html">
+=======
+>>>>>>> upstream/master
 <link rel="import" href="animatable-content.html">
 
 
@@ -130,6 +133,7 @@
           <div class="container" center-justified>
             <div class="home-wrapper">
               <iron-image class="logo" src="/images/logo-light.svg" sizing="contain"
+<<<<<<< HEAD
                           alt="GDG Foumban"></iron-image>
                 <!-- <h3 class="dates">{{localize('dates')}}</h3> -->
               <h2 class="motto">{{localize('motto')}}</h2>
@@ -139,17 +143,35 @@
               </div>
               <div class="action-buttons">
                 <paper-button class="primary" on-tap="_scrollToTickets" raised>{{localize('buy-ticket')}}</paper-button>
+=======
+                          alt="GDG DevFest Ukraine 2016"></iron-image>
+              <h3 class="dates">{$ dates $}</h3>
+              <h2 class="motto">{$ motto $}</h2>
+              {% if pages.home.headerSettings.video %}
+                <div class="open-video" on-tap="_openVideo">
+                  <iron-icon icon="play"></iron-icon>
+                  {$ playIcon $}
+                </div>
+              {% endif %}
+              <div class="action-buttons">
+                <paper-button class="primary" on-tap="_scrollToTickets" raised>{$ buyTicket $}</paper-button>
+>>>>>>> upstream/master
               </div>
             </div>
           </div>
         </animatable-content>
         <animatable-content name="blog">
           <div class="container">
+<<<<<<< HEAD
             <h3 class="page-title" hidden$="{{app.headerSettings.title}}">{{localize('blog')}}</h3>
+=======
+            <h3 class="page-title" hidden$="{{app.headerSettings.title}}">{$ pages.blog.title $}</h3>
+>>>>>>> upstream/master
             <h3 class="page-title" hidden$="{{!app.headerSettings.title}}">[[app.headerSettings.title]]</h3>
             <div class="page-subtitle" hidden$="{{!app.headerSettings.subtitle}}">[[app.headerSettings.subtitle]]</div>
           </div>
         </animatable-content>
+<<<<<<< HEAD
         <animatable-content name="speakers">
           <div class="container">
             <h3 class="page-title">{{localize('speakers')}}</h3>
@@ -170,6 +192,17 @@
             <h3 class="page-title">{{localize('cod')}}</h3>
           </div>
         </animatable-content>
+=======
+        {% for page, settings in pages %}
+          {% if page !== 'home' and page !== 'blog' %}
+            <animatable-content name="{$ page $}">
+              <div class="container">
+                <h3 class="page-title">{$ settings.title $}</h3>
+              </div>
+            </animatable-content>
+          {% endif %}
+        {% endfor %}
+>>>>>>> upstream/master
       </neon-animated-pages>
     </app-toolbar>
 
@@ -183,10 +216,13 @@
 
         is: 'header-content',
 
+<<<<<<< HEAD
         behaviors: [
           HOVERBOARD.LocalizeBehavior
         ],
 
+=======
+>>>>>>> upstream/master
         properties: {
           app: {
             type: Object
@@ -200,9 +236,15 @@
         },
 
         _openVideo: function () {
+<<<<<<< HEAD
           HOVERBOARD.Elements.Template.openVideo(this.app.data.pages.home.headerSettings.video.title,
             this.app.data.pages.home.headerSettings.video.youtubeId, true);
           HOVERBOARD.Analytics.trackEvent('video', 'watch', this.app.data.pages.home.headerSettings.video.title);
+=======
+          HOVERBOARD.Elements.Template.openVideo('{$ pages.home.headerSettings.video.title $}',
+            '{$ pages.home.headerSettings.video.youtubeId $}', true);
+          HOVERBOARD.Analytics.trackEvent('video', 'watch', '{$ pages.home.headerSettings.video.title $}');
+>>>>>>> upstream/master
         },
 
         _scrollToTickets: function () {

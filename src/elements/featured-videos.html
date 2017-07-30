@@ -8,7 +8,10 @@
 
 <link rel="import" href="../styles/shared-styles.html">
 <link rel="import" href="../behaviors/utils-behavior.html">
+<<<<<<< HEAD
 <link rel="import" href="../behaviors/localize-behavior.html">
+=======
+>>>>>>> upstream/master
 
 
 <dom-module id="featured-videos">
@@ -113,9 +116,15 @@
       }
     </style>
 
+<<<<<<< HEAD
    <!-- <div class="container">
       <div class="videos-header">
         <h4 class="heading">[[localize('featured-videos-title')]]</h4>
+=======
+    <div class="container">
+      <div class="videos-header">
+        <h4 class="heading">{$ featuredVideosTitle $}</h4>
+>>>>>>> upstream/master
         <div class="controls">
           <paper-icon-button icon="icons:chevron-left" on-tap="shiftContentLeft"></paper-icon-button>
           <paper-icon-button icon="icons:chevron-right" on-tap="shiftContentRight"></paper-icon-button>
@@ -146,6 +155,7 @@
             </paper-card>
           </div>
         </template>
+<<<<<<< HEAD
       </div> 
       <div layout>
         <a href$="[[app.data.videosSessionsUrl]]" class="block-link" target="_blank" rel="noopener noreferrer">
@@ -153,6 +163,15 @@
         </a>
       </div>
     </div> -->
+=======
+      </div>
+      <div layout>
+        <a href="{$ videosSessionsUrl $}" class="block-link" target="_blank" rel="noopener noreferrer">
+          <paper-button>{$ featuredVideosViewAll $}</paper-button>
+        </a>
+      </div>
+    </div>
+>>>>>>> upstream/master
 
   </template>
 
@@ -165,7 +184,10 @@
         is: 'featured-videos',
 
         behaviors: [
+<<<<<<< HEAD
           HOVERBOARD.LocalizeBehavior,
+=======
+>>>>>>> upstream/master
           HOVERBOARD.UtilsBehavior
         ],
 
@@ -222,7 +244,11 @@
         },
 
         _videosChanged: function () {
+<<<<<<< HEAD
           if (this.app.videos) {
+=======
+          if (this.app.videos && Object.keys(this.app.videos).length) {
+>>>>>>> upstream/master
             this._videos = this._randomOrder(this.app.videos).slice(0, 6);
           }
         },

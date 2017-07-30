@@ -3,6 +3,7 @@
     "rules": "database.rules.json"
   },
   "hosting": {
+<<<<<<< HEAD
     "public": "build/unbundled",
     "cleanUrls": true,
     "rewrites": [
@@ -12,6 +13,18 @@
       }
     ],
       "ignore": [
+=======
+    "public": "./build",
+    "cleanUrls": true,
+    "rewrites": [
+      {
+        "source": "**/*",
+        "destination": "/index.html"
+      }
+    ],
+    "ignore": [
+      "/test/**",
+>>>>>>> upstream/master
       "bower.json",
       "database.rules.json",
       "firebase.json",

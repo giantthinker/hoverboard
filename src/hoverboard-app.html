@@ -20,7 +20,10 @@
 
 <link rel="import" href="effects/fade-effect.html">
 <link rel="import" href="behaviors/utils-behavior.html">
+<<<<<<< HEAD
 <link rel="import" href="behaviors/localize-behavior.html">
+=======
+>>>>>>> upstream/master
 <link rel="import" href="elements/app-data.html">
 <link rel="import" href="elements/drawer-block.html">
 <link rel="import" href="elements/toolbar-block.html">
@@ -113,10 +116,21 @@
       data="{{routeData}}"
       tail="{{subRoute}}"></app-route>
 
+<<<<<<< HEAD
+=======
+    <firebase-app
+      name="{$ firebase.name $}"
+      auth-domain="{$ firebase.domain $}"
+      database-url="{$ firebase.database $}"
+      api-key="{$ firebase.api $}">
+    </firebase-app>
+
+>>>>>>> upstream/master
     <app-data
       app="{{app}}"
       speakers="{{speakers}}"
       sessions="{{sessions}}"
+<<<<<<< HEAD
       schedule="{{schedule}}"schedule="{{schedule}}"schedule="{{schedule}}"
       posts="{{posts}}"
     ></app-data>
@@ -135,13 +149,30 @@
       user="{{app.user}}"
     >
     </firebase-auth>
+=======
+      schedule="{{schedule}}"
+      posts="{{posts}}"
+    ></app-data>
+
+    <firebase-auth
+      id="auth"
+      provider="google"
+      app-name="{$ firebase.name $}"
+      user="{{app.user}}"
+      status-known="{{_authStatusKnown}}"
+    ></firebase-auth>
+>>>>>>> upstream/master
 
     <app-drawer-layout id="drawerLayout" drawer-width="599px" force-narrow>
 
       <app-drawer
         id="drawer"
+<<<<<<< HEAD
         swipe-open="[[app.isPhoneSize]]"
       >
+=======
+        swipe-open="[[app.isPhoneSize]]">
+>>>>>>> upstream/master
         <template is="dom-if" if="[[app.isPhoneSize]]">
           <drawer-block
             app={{app}}
@@ -187,20 +218,31 @@
                          app="{{app}}"
                          route="{{subRoute}}"
                          speakers="{{speakers}}"></speakers-page>
+<<<<<<< HEAD
             
+=======
+
+>>>>>>> upstream/master
           <schedule-page name="schedule"
                          app="{{app}}"
                          route="{{subRoute}}"
                          schedule="{{schedule}}"
+<<<<<<< HEAD
                          sessions="{{sessions}}"></schedule-page>  
+=======
+                         sessions="{{sessions}}"></schedule-page>
+>>>>>>> upstream/master
 
           <team-page name="team"
                      app="{{app}}"></team-page>
 
           <cod-page name="cod"
                     app="{{app}}"></cod-page>
+<<<<<<< HEAD
             <past-events name="events"
                          app="{{app}}"></past-events>
+=======
+>>>>>>> upstream/master
 
         </neon-animated-pages>
       </div>
@@ -231,7 +273,10 @@
         is: 'hoverboard-app',
 
         behaviors: [
+<<<<<<< HEAD
           HOVERBOARD.LocalizeBehavior,
+=======
+>>>>>>> upstream/master
           HOVERBOARD.UtilsBehavior
         ],
 
@@ -241,21 +286,46 @@
             notify: true,
             value: function () {
               return {
+<<<<<<< HEAD
 
                 lang: 'fr'
 
+=======
+                user: {}
+>>>>>>> upstream/master
               };
             }
+          },
+
+<<<<<<< HEAD
+          page: {
+            type: String,
+            reflectToAttribute: true
+=======
+          _authStatusKnown: {
+            type: Boolean,
+            value: false,
+            observer: '_autoSignIn'
           },
 
           page: {
             type: String,
             reflectToAttribute: true
+          },
+
+          pages: {
+            type: Array,
+            value: {$ pages | dump | safe $}
+>>>>>>> upstream/master
           }
         },
 
         observers: [
+<<<<<<< HEAD
           '_routePageChanged(routeData.page, app.data.navigation)',
+=======
+          '_routePageChanged(routeData.page)',
+>>>>>>> upstream/master
           '_pageChanged(app.page)',
           'stylesChanged(app.headerSettings)'
         ],
@@ -278,11 +348,17 @@
           this.set('app.page', (page || 'home'));
           // Close the drawer - in case the *route* change came from a link in the drawer.
           this.drawerOpened = false;
+<<<<<<< HEAD
           if (this.app.data) {
             var navObject = this.app.data.pages[this.app.page];
             if (navObject && navObject.headerSettings) {
               this.set('app.headerSettings', navObject.headerSettings);
             }
+=======
+          var navObject = this.pages[this.app.page];
+          if (navObject && navObject.headerSettings) {
+            this.set('app.headerSettings', navObject.headerSettings);
+>>>>>>> upstream/master
           }
         },
 
@@ -348,11 +424,69 @@
         },
 
         signIn: function () {
+<<<<<<< HEAD
           HOVERBOARD.Elements.Template.$.auth.signInWithPopup();
         },
 
         signOut: function () {
           this.$.auth.signOut();
+=======
+          this.$.auth.signInWithPopup()
+            .then(function (signInObject) {
+              if (navigator.credentials) {
+                var cred = new FederatedCredential({
+                  id: signInObject.user.email,
+                  name: signInObject.user.displayName,
+                  iconURL: signInObject.user.photoURL,
+                  provider: 'https://accounts.google.com'
+                });
+
+                navigator.credentials.store(cred);
+              }
+            });
+        },
+
+        signOut: function () {
+          this.$.auth.signOut()
+            .then(function () {
+              if (navigator.credentials) {
+                navigator.credentials.requireUserMediation();
+              }
+            });
+        },
+
+        _autoSignIn: function (authStatusKnown) {
+          if (navigator.credentials
+            && authStatusKnown
+            && !this.app.user) {
+            return navigator.credentials.get({
+              password: true,
+              federated: {
+                providers: ['https://accounts.google.com']
+              },
+              unmediated: true
+            }).then(function (cred) {
+              if (cred) {
+                this.gSignIn(cred.id);
+              }
+            }.bind(this));
+          }
+        },
+
+        gSignIn: function (id) {
+          return (function () {
+            if (this.app.user && this.app.user.email === id) {
+              return Promise.resolve(this.app.user);
+            }
+
+            var provider = new firebase.auth.GoogleAuthProvider();
+            provider.setCustomParameters({
+              'login_hint': id || ''
+            });
+
+            return this.$.auth.signInWithPopup(provider);
+          }.bind(this))();
+>>>>>>> upstream/master
         }
 
       });

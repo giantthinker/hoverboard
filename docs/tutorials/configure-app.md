@@ -4,6 +4,7 @@ The most important file of configuration is `data/hoverboard.config.json`
 which looks like:
 
 ```
+<<<<<<< HEAD
   "firebase": {..},
   "pages": {..},
   "navigation": [..],
@@ -30,6 +31,29 @@ which looks like:
 AppLocalizeBehavior], that's why some of the config values are keys in
 [localization resources][localization resources].
 
+=======
+  "url": "..",
+  "startDate": "..",
+  "endDate": "..",
+  "analytics": {..},
+  "organizer": {..},
+  "webapp": {..},
+  "firebase": {..},
+  "mailchimp": {..},
+  "hashtag": "..",
+  "disqusShortName": "..",
+  "tweetsSource": "..",
+  "partnershipProposition": "..",
+  "videosSessionsUrl": "..",
+  "enableSessionsRating": "..",
+  "navigation": [..],
+  "social": [..],
+  "location": {..}
+  "social": [..],
+  "gallery": {..}
+```
+
+>>>>>>> upstream/master
 ### SEO
 The project doesn't use any generators, so there is a need to edit manually
 meta data in `index.html`
@@ -143,7 +167,11 @@ Read [full documentation](http://chrissimpkins.github.io/tweetledee/) on the off
 Now your Hoverboard is up configured, learn how to integrate [firebase][firebase] in your app, [style app][style app] and [deploy][deploy].
 
 [AppLocalizeBehavior]: https://elements.polymer-project.org/elements/app-localize-behavior
+<<<<<<< HEAD
 [localization resources]: /data/en/resources.json
+=======
+[localization resources]: /data/resources.json
+>>>>>>> upstream/master
 [style app]: styling.md
 [deploy]: deploy.md
 [firebase]: firebase.md

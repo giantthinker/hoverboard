@@ -11,7 +11,10 @@
 
 <link rel="import" href="../styles/shared-styles.html">
 <link rel="import" href="../behaviors/utils-behavior.html">
+<<<<<<< HEAD
 <link rel="import" href="../behaviors/localize-behavior.html">
+=======
+>>>>>>> upstream/master
 
 
 <dom-module id="schedule-subnav">
@@ -121,7 +124,11 @@
         color: var(--text-primary-color);
       }
 
+<<<<<<< HEAD
       .myschedue-button[disabled] {
+=======
+      .myschedule-button[disabled] {
+>>>>>>> upstream/master
         opacity: 0;
       }
     </style>
@@ -151,7 +158,11 @@
           <template is="dom-if" if="{{app.user}}">
             <paper-tab day="myschedule" link>
               <a href="/schedule/myschedule" layout center>
+<<<<<<< HEAD
                 [[localize('my-schedule')]]
+=======
+                {$ mySchedule $}
+>>>>>>> upstream/master
               </a>
             </paper-tab>
           </template>
@@ -161,7 +172,11 @@
       <template is="dom-if" if="[[_showDaySelector(app.isPhoneSize, selectedDay)]]">
         <paper-menu-button vertical-align="top" horizontal-align="left">
           <paper-button class="dropdown-trigger">
+<<<<<<< HEAD
             [[_getDayLabel(selectedDay)]]
+=======
+            [[_getDayLabel(selectedDay, schedule)]]
+>>>>>>> upstream/master
             <iron-icon icon="arrow-drop-down"></iron-icon>
           </paper-button>
           <paper-menu
@@ -184,16 +199,28 @@
           <paper-icon-button icon="arrow-back"
                              aria-label="Close My Schedule"
                              on-tap="_goBack"></paper-icon-button>
+<<<<<<< HEAD
           <span>[[localize('my-schedule')]]</span>
+=======
+          <span>{$ mySchedule $}</span>
+>>>>>>> upstream/master
         </div>
       </template>
 
       <div layout horizontal center>
+<<<<<<< HEAD
         <div class="myschedue-button"
              hidden$="[[!_displayPersonIcon(app.isPhoneSize, app.user)]]"
              disabled$="[[_isMySchedulePage(selectedDay)]]">
           <a href="/schedule/myschedule">
             <paper-icon-button icon="person" aria-label="[[localize('my-schedule')]]"></paper-icon-button>
+=======
+        <div class="myschedule-button"
+             hidden$="[[!_displayPersonIcon(app.isPhoneSize, app.user)]]"
+             disabled$="[[_isMySchedulePage(selectedDay)]]">
+          <a href="/schedule/myschedule">
+            <paper-icon-button icon="person" aria-label="{$ mySchedule $}"></paper-icon-button>
+>>>>>>> upstream/master
           </a>
         </div>
         <paper-menu-button
@@ -204,7 +231,11 @@
           opened="{{_filtersOpened}}"
         >
           <paper-button class="filter-button dropdown-trigger">
+<<<<<<< HEAD
             [[localize('filter')]]
+=======
+            {$ filter $}
+>>>>>>> upstream/master
             <iron-icon class="filter-icon" icon="filter-list"></iron-icon>
           </paper-button>
           <paper-menu
@@ -223,7 +254,11 @@
                 [[tag]]
               </paper-checkbox>
             </template>
+<<<<<<< HEAD
             <paper-item on-tap="clearFilters">[[localize('clear-all')]]</paper-item>
+=======
+            <paper-item on-tap="clearFilters">{$ clearAll $}</paper-item>
+>>>>>>> upstream/master
           </paper-menu>
         </paper-menu-button>
       </div>
@@ -239,7 +274,11 @@
         </template>
       </div>
       <div class="filters" hidden$="[[!_filtersLabel]]">
+<<<<<<< HEAD
         [[localize('filtered-by')]] [[_filtersLabel]]
+=======
+        {$ filteredBy $} [[_filtersLabel]]
+>>>>>>> upstream/master
       </div>
     </div>
 
@@ -254,8 +293,12 @@
         is: 'schedule-subnav',
 
         behaviors: [
+<<<<<<< HEAD
           HOVERBOARD.UtilsBehavior,
           HOVERBOARD.LocalizeBehavior
+=======
+          HOVERBOARD.UtilsBehavior
+>>>>>>> upstream/master
         ],
 
         properties: {
@@ -363,7 +406,11 @@
         },
 
         _getDayLabel: function (selectedDay) {
+<<<<<<< HEAD
           if (this._isMySchedulePage(selectedDay)) return;
+=======
+          if (!this.schedule || this._isMySchedulePage(selectedDay)) return;
+>>>>>>> upstream/master
 
           var index = Number(selectedDay.match(/\d+/)[0]);
           return this.schedule[index - 1].dateReadable;
