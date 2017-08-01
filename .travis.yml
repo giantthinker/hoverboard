@@ -11,6 +11,9 @@ cache:
   - "${NVM_PATH}_modules"
 env:
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ef15d50c5630519e2d96decc0e6064b0b6c01e6d
   matrix:
   - CXX=g++-4.8
   global:
@@ -23,9 +26,12 @@ QVhsrdSBizL+KZcs9yOZ4y87rebb8E3b/kMHeBJHd2JkiwYqO0ll/MoKRbbY3nccUOUxZz3+1eIfsGmr
 WDNGIaEGloMg1u68Ut5Kt886hHF9ZI/vef5xJj+nNLAe2KTATh7QcuPVxeKK53a3L6I16VRCzEnudvFZ
 BLxcBYg+I62QlnPjYKxjXsuc2s8YeqW7rnwbN6v3wlMwhLlWMhsF7PIhLIcxjVTdF2cu0TR+xRZvsp7p
 Y5LBc0LEwigWA08kF1G5egw1lwjQEVfxQtOr1q+RSbVIUTsmK2i1Bo=
+<<<<<<< HEAD
 =======
 - CXX=g++-4.8
 >>>>>>> upstream/master
+=======
+>>>>>>> ef15d50c5630519e2d96decc0e6064b0b6c01e6d
 addons:
   apt:
     sources:

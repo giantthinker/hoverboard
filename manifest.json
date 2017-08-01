@@ -1,11 +1,16 @@
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
   "name": "Google Developers Group Foumban",
   "short_name": "GDG Foumban",
 =======
   "name": "{$ title $}",
   "short_name": "{$ webapp.shortName $}",
 >>>>>>> upstream/master
+=======
+  "name": "Google Developers Group Foumban",
+  "short_name": "GDG Foumban",
+>>>>>>> ef15d50c5630519e2d96decc0e6064b0b6c01e6d
   "icons": [
     {
       "src": "images/touch/homescreen-48.png",

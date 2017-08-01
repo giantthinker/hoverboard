@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> ef15d50c5630519e2d96decc0e6064b0b6c01e6d
 
 {
   "firebase": {
@@ -13,6 +16,7 @@
       "headerSettings": {
         "backgroundColor": "#FF9800",
         "backgroundImage": "/images/backgrounds/background.png",
+<<<<<<< HEAD
         "fontColor": "#fff",
         "tabBarColor": "#fff",
         "video": {
@@ -142,15 +146,21 @@
       "headerSettings": {
         "backgroundColor": "#FF9800",
         "backgroundImage": "/images/backgrounds/home.png",
+=======
+>>>>>>> ef15d50c5630519e2d96decc0e6064b0b6c01e6d
         "fontColor": "#fff",
         "tabBarColor": "#fff",
         "video": {
-          "title": "GDG DevFest Ukraine 2016",
+          "title": "GDG Foumban",
           "youtubeId": "TdpbgRgz6eE",
           "text": "See how it was in 2016"
         },
+<<<<<<< HEAD
         "hideLogo": true,
 >>>>>>> upstream/master
+=======
+        "hideLogo": false,
+>>>>>>> ef15d50c5630519e2d96decc0e6064b0b6c01e6d
         "minHeight": "360px"
       }
     },
