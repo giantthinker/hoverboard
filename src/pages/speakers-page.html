@@ -17,10 +17,6 @@
 <link rel="import" href="../elements/footer-block.html">
 <link rel="import" href="../behaviors/utils-behavior.html">
 <link rel="import" href="../behaviors/page-behavior.html">
-<<<<<<< HEAD
-<link rel="import" href="../behaviors/localize-behavior.html">
-=======
->>>>>>> upstream/master
 <link rel="import" href="../behaviors/cascaded-behavior.html">
 
 <dom-module id="speakers-page">
@@ -203,11 +199,7 @@
             </a>
             <a href$="/speakers/[[speaker.id]]/" class="card-content">
               <iron-image class="company-logo" src="{{speaker.companyLogo}}" sizing="contain"></iron-image>
-<<<<<<< HEAD
-              <div class="tags">{{localize('skills')}}:
-=======
               <div class="tags">{$ skills $}:
->>>>>>> upstream/master
                 <template is="dom-repeat" items="[[speaker.tags]]" as="tag">
                   <span class="tag" style$="{{_getCustomStyleValue(tag)}}">[[tag]]</span>
                 </template>
@@ -251,12 +243,7 @@
         behaviors: [
           HOVERBOARD.PageBehavior,
           HOVERBOARD.CascadedBehavior,
-<<<<<<< HEAD
-          HOVERBOARD.UtilsBehavior,
-          HOVERBOARD.LocalizeBehavior
-=======
           HOVERBOARD.UtilsBehavior
->>>>>>> upstream/master
         ],
 
         properties: {
@@ -282,11 +269,7 @@
         },
 
         observers: [
-<<<<<<< HEAD
-          '_routePageChanged(routeData.speakerId)'
-=======
           '_routePageChanged(routeData.speakerId, speakers)'
->>>>>>> upstream/master
         ],
 
         listeners: {

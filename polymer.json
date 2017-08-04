@@ -5,10 +5,6 @@
     "src/pages/blog-list.html",
     "src/pages/blog-page.html",
     "src/pages/cod-page.html",
-<<<<<<< HEAD
-    "src/pages/home-page.html",
-=======
->>>>>>> upstream/master
     "src/pages/post-page.html",
     "src/pages/schedule-page.html",
     "src/pages/speakers-page.html",
@@ -22,13 +18,8 @@
     "bower.json",
     "manifest.json"
   ],
-<<<<<<< HEAD
-  "includeDependencies": [
-    "bower_components/webcomponentsjs/webcomponents-lite.min.js"
-=======
   "extraDependencies": [
     "bower_components/webcomponentsjs/webcomponents-lite.min.js",
     "bower_components/app-storage/app-indexeddb-mirror/app-indexeddb-mirror-worker.js"
->>>>>>> upstream/master
   ]
 }

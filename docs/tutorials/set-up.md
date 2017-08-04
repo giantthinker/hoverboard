@@ -20,22 +20,6 @@ Or you may use [Docker container for development](docker.md)
         npm -v
         2.15.8
 
-<<<<<<< HEAD
-1.  Install Bower.
-
-        npm install -g bower
-
-    Note: the `-g` flag installs Gulp and Bower globally, so you may need to
-    execute the script with `sudo` privileges. The reason they are installed
-    globally is because some scripts in the Hoverboard expect `bower` to be 
-    available from the command line.
-    
-1.  Install [polymer-cli](https://github.com/Polymer/polymer-cli):
-    
-        npm i -g polymer-cli
-
-=======
->>>>>>> upstream/master
 1.  [Fork](https://github.com/gdg-x/hoverboard/fork) this repository
 
 1.  Clone it locally.
@@ -44,11 +28,7 @@ Or you may use [Docker container for development](docker.md)
 
 1.  Install the application dependencies.
 
-<<<<<<< HEAD
-        bower install
-=======
         npm install
->>>>>>> upstream/master
 
 ## Directory structure
 
@@ -57,11 +37,6 @@ The diagram below is a brief summary of the directories within the PSK.
     /
     |---bower_components/
     |---build/
-<<<<<<< HEAD
-    |   |---bundled/
-    |   |---unbundled/
-=======
->>>>>>> upstream/master
     |---data/
     |---docs/
     |---images/
@@ -77,14 +52,6 @@ The diagram below is a brief summary of the directories within the PSK.
 
 *   `bower_components/` is the place for project dependencies.
 *   `build/` is the directory to deploy to production.
-<<<<<<< HEAD
-*   `bundled/` - here all fragments are bundled together to reduce the number 
-    of file requests. Optimal for sending to clients or serving from servers 
-    that are not HTTP/2 compatible.
-*   `unbundled/` - an app where fragments are unbundled. Optimal for 
-    HTTP/2-compatible servers and clients. 
-=======
->>>>>>> upstream/master
 *   `data/` folder with all data for the template including config, blog, 
     partners, schedule, sessions, speakers, team and videos.
 *   `docs/` contains optional "recipes" (how-to guides) for adding features
@@ -105,19 +72,6 @@ The diagram below is a brief summary of the directories within the PSK.
 
 The Hoverboard is ready to be built and ran locally.
 
-<<<<<<< HEAD
-1. `cd` into the base directory of your PSK project.
-
-1.  Serve the app locally.
-
-        polymer serve
-
-1.  Build the app.
-
-        polymer build
-
-    More options you can find on [polymer-cli][polymer-cli] repository.
-=======
 1. `cd` into the base directory of your Hoverboard project.
 
 1.  Serve the app locally.
@@ -127,7 +81,6 @@ The Hoverboard is ready to be built and ran locally.
 1.  Build the app.
 
         npm run build
->>>>>>> upstream/master
 
 
 ## Next steps

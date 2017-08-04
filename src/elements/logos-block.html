@@ -5,10 +5,6 @@
 
 <link rel="import" href="../../bower_components/paper-button/paper-button.html">
 
-<<<<<<< HEAD
-<link rel="import" href="../behaviors/localize-behavior.html">
-=======
->>>>>>> upstream/master
 <link rel="import" href="../styles/shared-styles.html">
 
 <dom-module id="logos-block">
@@ -69,17 +65,10 @@
     </style>
 
     <div class="container">
-<<<<<<< HEAD
-      <h4 class="heading text-center">[[localize('partners')]]</h4>
-      <template is="dom-repeat" items="[[app.partners]]" as="block">
-        <div class="logos-block-wrapper">
-          <h5 class="logos-block-title text-center">[[localize(block.title)]]</h5>
-=======
       <h4 class="heading text-center">{$ partners $}</h4>
       <template is="dom-repeat" items="[[app.partners]]" as="block">
         <div class="logos-block-wrapper">
           <h5 class="logos-block-title text-center">[[block.title]]</h5>
->>>>>>> upstream/master
           <div class="logos">
             <template is="dom-repeat" items="[[block.logos]]" as="logo">
               <a class="logo-item" href="[[logo.url]]" title="[[logo.name]]" target="_blank" rel="noopener noreferrer">
@@ -96,13 +85,8 @@
           </div>
         </div>
       </template>
-<<<<<<< HEAD
-      <a class="block-link" href$="[[app.data.partnershipProposition]]" target="_blank" rel="noopener noreferrer" on-tap="_trackClick">
-        <paper-button class="primary" raised>[[localize('become-a-partner')]]</paper-button>
-=======
       <a class="block-link" href="{$ partnershipProposition $}" target="_blank" rel="noopener noreferrer" on-tap="_trackClick">
         <paper-button class="primary" raised>{$ becomePartner $}</paper-button>
->>>>>>> upstream/master
       </a>
     </div>
 
@@ -116,13 +100,6 @@
 
         is: 'logos-block',
 
-<<<<<<< HEAD
-        behaviors: [
-          HOVERBOARD.LocalizeBehavior
-        ],
-
-=======
->>>>>>> upstream/master
         _trackClick: function () {
           HOVERBOARD.Analytics.trackEvent('sponsors', 'open proposition', 'Become a partner');
         }

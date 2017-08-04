@@ -5,10 +5,6 @@
 <link rel="import" href="../../bower_components/paper-button/paper-button.html">
 
 <link rel="import" href="../styles/shared-styles.html">
-<<<<<<< HEAD
-<link rel="import" href="../behaviors/localize-behavior.html">
-=======
->>>>>>> upstream/master
 <link rel="import" href="ticket-element.html">
 
 
@@ -70,27 +66,6 @@
 
     <div class="container">
       <div class="block-header">
-<<<<<<< HEAD
-        <h4 class="heading">[[localize('tickets-title')]]</h4>
-      </div>
-      <div class="tickets-wrapper">
-        <template is="dom-repeat" items="[[app.data.tickets.elements]]" as="ticket">
-          <ticket-element
-            type="[[localize(ticket.name)]]"
-            price="[[ticket.price]]"
-            currency="[[ticket.currency]]"
-            starts="[[localize(ticket.starts)]]"
-            ends="[[localize(ticket.ends)]]"
-            info="[[localize(ticket.info)]]"
-            sold-out="[[ticket.soldOut]]"
-            sold-out-text="[[localize('sold-out-tickets')]]"
-          ></ticket-element>
-        </template>
-      </div>
-      <div class="details">[[localize('tickets-details')]]</div>
-      <a href$="[[app.data.tickets.url]]" target="_blank" rel="noopener noreferrer" on-tap="_trackBuyClick">
-        <paper-button class="buy-button" raised>[[localize('buy-ticket')]]</paper-button>
-=======
         <h4 class="heading">{$ ticketsTitle $}</h4>
       </div>
       <div class="tickets-wrapper">
@@ -110,7 +85,6 @@
       <div class="details">{$ ticketsDetails $}</div>
       <a href="[[app.tickets.url]]" target="_blank" rel="noopener noreferrer" on-tap="_trackBuyClick">
         <paper-button class="buy-button" raised>{$ buyTicket $}</paper-button>
->>>>>>> upstream/master
       </a>
     </div>
 
@@ -123,17 +97,8 @@
       Polymer({
         is: 'tickets-block',
 
-<<<<<<< HEAD
-        behaviors: [
-          HOVERBOARD.LocalizeBehavior
-        ],
-
-        ready: function () {
-          HOVERBOARD.Elements.Tickets = this;
-=======
         ready: function () {
           HOVERBOARD.Elements.Tickets = this
->>>>>>> upstream/master
         },
 
         _trackBuyClick: function (e) {

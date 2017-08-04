@@ -35,11 +35,7 @@ The instructions below are based on the [Firebase quick start][Firebase quick st
 
 1.  Build
 
-<<<<<<< HEAD
-        polymer build
-=======
         npm run build
->>>>>>> upstream/master
 
 1.  Deploy
 

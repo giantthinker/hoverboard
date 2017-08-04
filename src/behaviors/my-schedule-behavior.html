@@ -4,12 +4,9 @@
   (function () {
     'use strict';
 
-<<<<<<< HEAD
-=======
     /**
      * @polymerBehavior HOVERBOARD.MyScheduleBehavior
      */
->>>>>>> upstream/master
     HOVERBOARD.MyScheduleBehavior = {
 
       properties: {
@@ -23,17 +20,6 @@
         e.stopPropagation();
         e.preventDefault();
 
-<<<<<<< HEAD
-        if (!this.app.user) {
-          HOVERBOARD.Elements.Template.$.toast.showMessage(
-            this.localize('you-should-sign-in'), HOVERBOARD.Elements.Template.signIn, this.localize('sign-in'));
-          return;
-        }
-
-        if (!this.online) {
-          return;
-        }
-=======
         if (!this.online) {
           HOVERBOARD.Elements.Template.$.toast.showMessage('{$ offlineMessage $}');
           return;
@@ -48,26 +34,17 @@
           return;
         }
 
->>>>>>> upstream/master
         var id = e.target.getAttribute('session-id');
 
         if (this.app.user.sessions && this.app.user.sessions[id]) {
           this.set('app.user.sessions.' + id, null);
-<<<<<<< HEAD
-          HOVERBOARD.Elements.Template.$.toast.showMessage(this.localize('removed-from-schedule'));
-=======
           HOVERBOARD.Elements.Template.$.toast.showMessage('{$ removedFromSchedule $}');
->>>>>>> upstream/master
         } else {
           if (!this.app.user.sessions) {
             this.app.user.sessions = {};
           }
           this.set('app.user.sessions.' + id, true);
-<<<<<<< HEAD
-          HOVERBOARD.Elements.Template.$.toast.showMessage(this.localize('added-to-schedule'));
-=======
           HOVERBOARD.Elements.Template.$.toast.showMessage('{$ addedToSchedule $}');
->>>>>>> upstream/master
         }
       },
 

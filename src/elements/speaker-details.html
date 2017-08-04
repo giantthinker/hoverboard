@@ -15,10 +15,6 @@
 
 <link rel="import" href="../styles/dialog-styles.html">
 <link rel="import" href="../styles/shared-styles.html">
-<<<<<<< HEAD
-<link rel="import" href="../behaviors/localize-behavior.html">
-=======
->>>>>>> upstream/master
 <link rel="import" href="../behaviors/utils-behavior.html">
 <link rel="import" href="truncate-marked-text.html">
 
@@ -36,11 +32,7 @@
         </a>
         <div class="middle fallback-image-wrapper" hidden$="{{app.isPhoneSize}}">
           <iron-image class="fallback-image" src="/images/logo-white.svg"
-<<<<<<< HEAD
-                      alt="[[localize('title')]]"></iron-image>
-=======
                       alt="{$ title $}"></iron-image>
->>>>>>> upstream/master
         </div>
         <div id="title" class="bottom title toolbar-title" hidden$="{{!app.isPhoneSize}}">[[speaker.name]]</div>
       </paper-toolbar>
@@ -76,11 +68,7 @@
 
       <template is="dom-if" if="{{speaker.sessions.length}}">
         <div class="sections-wrapper content">
-<<<<<<< HEAD
-          <h4 class="block-title">[[localize('sessions')]]</h4>
-=======
           <h4 class="block-title">{$ sessions $}</h4>
->>>>>>> upstream/master
           <div class="sections">
             <template is="dom-repeat" items="[[speaker.sessions]]" as="session">
               <div class="section">
@@ -96,12 +84,7 @@
                     characters="220"
                     break-last-word
                   ></truncate-marked-text>
-<<<<<<< HEAD
-                  <a class="read-more" href$="/schedule/day[[session.day]]?sessionId=[[session.id]]" dialog-dismiss>[[localize('read-more')]]</a>
-
-=======
                   <a class="read-more" hidden$="{{!session.day}}" href$="/schedule/day[[session.day]]?sessionId=[[session.id]]" dialog-dismiss>{$ readMore $}</a>
->>>>>>> upstream/master
                 </div>
               </div>
             </template>
@@ -123,10 +106,6 @@
         behaviors: [
           Polymer.PaperDialogBehavior,
           Polymer.NeonAnimationRunnerBehavior,
-<<<<<<< HEAD
-          HOVERBOARD.LocalizeBehavior,
-=======
->>>>>>> upstream/master
           HOVERBOARD.UtilsBehavior
         ],
 
@@ -190,13 +169,7 @@
             Polymer.IronDropdownScrollManager.removeScrollLock(this.$.scrollHeaderPanel);
             this._finishRenderClosed();
           }
-<<<<<<< HEAD
-
         }
-
-=======
-        }
->>>>>>> upstream/master
       });
 
     }());

@@ -12,10 +12,6 @@
 
 <link rel="import" href="../styles/shared-styles.html">
 <link rel="import" href="../behaviors/utils-behavior.html">
-<<<<<<< HEAD
-<link rel="import" href="../behaviors/localize-behavior.html">
-=======
->>>>>>> upstream/master
 
 
 <dom-module id="toolbar-block">
@@ -145,28 +141,13 @@
             class="logo"
             src="/images/logo-white.svg"
             sizing="contain"
-<<<<<<< HEAD
-            alt="{{localize('title')}}"
-=======
             alt="{$ title $}"
->>>>>>> upstream/master
           ></iron-image>
         </a>
       </div>
       <div class="navItem" layout horizontal self-end>
         <template is="dom-if" if="[[!app.isPhoneSize]]">
           <paper-tabs selected="[[app.page]]" attr-for-selected="name" noink>
-<<<<<<< HEAD
-            <template is="dom-repeat" items="[[app.data.navigation]]" as="nav">
-              <paper-tab name="[[nav.route]]" link>
-                <a href$="[[nav.permalink]]" class="nav-link">{{localize(nav.route)}}</a>
-              </paper-tab>
-            </template>
-          </paper-tabs>
-        </template>
-
-        <paper-tab class="signin-tab" on-tap="signIn" hidden$="[[app.user]]">[[localize('sign-in')]]</paper-tab>
-=======
             {% for nav in navigation %}
               <paper-tab name="{$ nav.route $}" link>
                 <a href="{$ nav.permalink $}" class="nav-link">{$ pages[nav.route].title $}</a>
@@ -176,7 +157,6 @@
         </template>
 
         <paper-tab class="signin-tab" on-tap="signIn" hidden$="[[app.user]]">{$ signIn $}</paper-tab>
->>>>>>> upstream/master
 
         <paper-menu-button
           class="auth-menu"
@@ -199,24 +179,15 @@
               <div layout vertical center-justified>
                 <span class="profile-name">[[app.user.displayName]]</span>
                 <span class="profile-email">[[app.user.email]]</span>
-<<<<<<< HEAD
-                <span class="profile-action" role="button" on-tap="signOut">[[localize('sign-out')]]</span>
-=======
                 <span class="profile-action" role="button" on-tap="signOut">{$ signOut $}</span>
->>>>>>> upstream/master
               </div>
             </div>
           </div>
         </paper-menu-button>
 
         <div class="action-button-wrapper" hidden$="[[app.isPhoneSize]]" layout horizontal center-center>
-<<<<<<< HEAD
-          <a href$="[[app.data.tickets.url]]" target="_blank" rel="noopener noreferrer" on-tap="_trackBuyClick">
-            <paper-button class="action-button">[[localize('buy-ticket')]]</paper-button>
-=======
           <a href="{$ tickets.url $}" target="_blank" rel="noopener noreferrer" on-tap="_trackBuyClick">
             <paper-button class="action-button">{$ buyTicket $}</paper-button>
->>>>>>> upstream/master
           </a>
         </div>
       </div>
@@ -233,10 +204,6 @@
         is: 'toolbar-block',
 
         behaviors: [
-<<<<<<< HEAD
-          HOVERBOARD.LocalizeBehavior,
-=======
->>>>>>> upstream/master
           HOVERBOARD.UtilsBehavior
         ],
 

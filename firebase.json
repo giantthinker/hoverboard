@@ -3,36 +3,16 @@
     "rules": "database.rules.json"
   },
   "hosting": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "public": "build/unbundled",
-    "cleanUrls": true,
-    "rewrites": [
-      {
-        "source": "**",
-        "destination": "/index.html"
-      }
-    ],
-      "ignore": [
-=======
     "public": "./build",
-=======
-    "public": "build/unbundled",
->>>>>>> ef15d50c5630519e2d96decc0e6064b0b6c01e6d
     "cleanUrls": true,
     "rewrites": [
       {
-        "source": "**",
+        "source": "**/*",
         "destination": "/index.html"
       }
     ],
-<<<<<<< HEAD
     "ignore": [
       "/test/**",
->>>>>>> upstream/master
-=======
-      "ignore": [
->>>>>>> ef15d50c5630519e2d96decc0e6064b0b6c01e6d
       "bower.json",
       "database.rules.json",
       "firebase.json",

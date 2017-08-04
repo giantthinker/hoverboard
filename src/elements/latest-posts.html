@@ -3,14 +3,8 @@
 <link rel="import" href="../../bower_components/iron-flex-layout/iron-flex-layout.html">
 
 <link rel="import" href="../../bower_components/marked-element/marked-element.html">
-<<<<<<< HEAD
-
-<link rel="import" href="../styles/shared-styles.html">
-<link rel="import" href="../behaviors/localize-behavior.html">
-=======
 <link rel="import" href="../behaviors/utils-behavior.html">
 <link rel="import" href="../styles/shared-styles.html">
->>>>>>> upstream/master
 
 
 <dom-module id="latest-posts">
@@ -62,22 +56,14 @@
     </style>
 
     <div class="container">
-<<<<<<< HEAD
-      <h4 class="heading text-center">[[localize('latest-news')]]</h4>
-=======
       <h4 class="heading text-center">{$ latestNews $}</h4>
->>>>>>> upstream/master
       <div class="posts-wrapper">
         <div class="post">
           <div class="title">[[_posts.0.title]]</div>
           <marked-element markdown="[[_posts.0.brief]]">
             <div class="markdown-html"></div>
           </marked-element>
-<<<<<<< HEAD
-          <a href$="[[_posts.0.url]]">[[localize('continue-reading')]]</a>
-=======
           <a href$="[[_posts.0.url]]">{$ continueReading $}</a>
->>>>>>> upstream/master
         </div>
         <span class="post-divider"></span>
         <div class="post">
@@ -85,11 +71,7 @@
           <marked-element markdown="[[_posts.1.brief]]">
             <div class="markdown-html"></div>
           </marked-element>
-<<<<<<< HEAD
-          <a href$="[[_posts.1.url]]">[[localize('continue-reading')]]</a>
-=======
           <a href$="[[_posts.1.url]]">{$ continueReading $}</a>
->>>>>>> upstream/master
         </div>
       </div>
     </div>
@@ -105,10 +87,6 @@
         is: 'latest-posts',
 
         behaviors: [
-<<<<<<< HEAD
-          HOVERBOARD.LocalizeBehavior,
-=======
->>>>>>> upstream/master
           HOVERBOARD.UtilsBehavior
         ],
 

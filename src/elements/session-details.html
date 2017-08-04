@@ -1,10 +1,7 @@
 <link rel="import" href="../../bower_components/polymer/polymer.html">
 
 <link rel="import" href="../../bower_components/app-storage/app-network-status-behavior.html">
-<<<<<<< HEAD
-=======
 <link rel="import" href="../../bower_components/app-storage/app-indexeddb-mirror/app-indexeddb-mirror.html">
->>>>>>> upstream/master
 
 <link rel="import" href="../../bower_components/iron-icon/iron-icon.html">
 <link rel="import" href="../../bower_components/iron-dropdown/iron-dropdown-scroll-manager.html">
@@ -20,14 +17,6 @@
 <link rel="import" href="../../bower_components/neon-animation/neon-animation-runner-behavior.html">
 <link rel="import" href="../../bower_components/marked-element/marked-element.html">
 
-<<<<<<< HEAD
-<link rel="import" href="../styles/dialog-styles.html">
-<link rel="import" href="../behaviors/share-behavior.html">
-<link rel="import" href="../behaviors/utils-behavior.html">
-<link rel="import" href="../behaviors/localize-behavior.html">
-<link rel="import" href="../behaviors/my-schedule-behavior.html">
-<link rel="import" href="truncate-marked-text.html">
-=======
 <link rel="import" href="../../bower_components/polymerfire/firebase-document.html">
 
 <link rel="import" href="../styles/dialog-styles.html">
@@ -36,7 +25,6 @@
 <link rel="import" href="../behaviors/my-schedule-behavior.html">
 <link rel="import" href="truncate-marked-text.html">
 <link rel="import" href="rating-element.html">
->>>>>>> upstream/master
 
 
 <dom-module id="session-details">
@@ -81,10 +69,6 @@
       .share-menu {
         padding: 0;
       }
-<<<<<<< HEAD
-    </style>
-
-=======
 
       .label {
         margin-top: 8px;
@@ -107,17 +91,12 @@
       persisted-data="{{app.user.ratings}}">
     </app-indexeddb-mirror>
 
->>>>>>> upstream/master
     <paper-scroll-header-panel id="scrollHeaderPanel" no-reveal>
       <paper-toolbar class="tall">
         <paper-icon-button class="back-button" dialog-dismiss icon="arrow-back"></paper-icon-button>
         <div class="middle fallback-image-wrapper">
           <iron-image class="fallback-image" src="/images/logo-white.svg"
-<<<<<<< HEAD
-                      alt="[[app.data.title]]"></iron-image>
-=======
                       alt="{$ title $}"></iron-image>
->>>>>>> upstream/master
         </div>
       </paper-toolbar>
       <div class="content">
@@ -155,11 +134,7 @@
           <paper-menu-button class="share-menu" horizontal-align="left" vertical-align="bottom" share-menu>
             <paper-button class="action dropdown-trigger">
               <iron-icon icon="share"></iron-icon>
-<<<<<<< HEAD
-              [[localize('share')]]
-=======
               {$ share $}
->>>>>>> upstream/master
             </paper-button>
             <div class="dropdown-content">
               <paper-icon-item on-tap="share" share="gplus">
@@ -176,11 +151,7 @@
               </paper-icon-item>
               <paper-icon-item on-tap="share" share="copy">
                 <iron-icon icon="link" item-icon></iron-icon>
-<<<<<<< HEAD
-                [[localize('copy-link')]]
-=======
                 {$ copyLink $}
->>>>>>> upstream/master
               </paper-icon-item>
             </div>
           </paper-menu-button>
@@ -190,15 +161,6 @@
              rel="noopener noreferrer">
             <paper-button class="action">
               <iron-icon icon="presentation"></iron-icon>
-<<<<<<< HEAD
-              [[localize('view-presentation')]]
-            </paper-button>
-          </a>
-          <div on-tap="_openVideo" hidden$="[[!session.videoId]]">
-            <paper-button class="action">
-              <iron-icon icon="video"></iron-icon>
-              [[localize('view-video')]]
-=======
               {$ viewPresentation $}
             </paper-button>
           </a>
@@ -207,29 +169,21 @@
             <paper-button class="action">
               <iron-icon icon="video"></iron-icon>
               {$ viewVideo $}
->>>>>>> upstream/master
             </paper-button>
           </div>
         </div>
 
-<<<<<<< HEAD
-=======
         {% if enableSessionsRating %}
         <div class="label">{$ rateSession $}</div>
         <rating-element rate={{rate}}
                         disabled$="[[_isRatingDisabled(online, app.user)]]"
                         on-tap="_rate"></rating-element>
         {% endif %}
->>>>>>> upstream/master
       </div>
 
       <template is="dom-if" if="{{session.speakers.length}}">
         <div class="sections-wrapper content">
-<<<<<<< HEAD
-          <h4 class="block-title">[[localize('speakers')]]</h4>
-=======
           <h4 class="block-title">{$ speakers $}</h4>
->>>>>>> upstream/master
           <div class="sections">
             <template is="dom-repeat" items="[[session.speakers]]" as="speaker">
               <div class="section">
@@ -249,11 +203,7 @@
                     break-last-word
                   ></truncate-marked-text>
 
-<<<<<<< HEAD
-                  <a class="read-more" href$="/speakers/[[speaker.id]]" dialog-dismiss>[[localize('read-more')]]</a>
-=======
                   <a class="read-more" href$="/speakers/[[speaker.id]]" dialog-dismiss>{$ readMore $}</a>
->>>>>>> upstream/master
                 </div>
               </div>
             </template>
@@ -276,10 +226,6 @@
           Polymer.PaperDialogBehavior,
           Polymer.NeonAnimationRunnerBehavior,
           Polymer.AppNetworkStatusBehavior,
-<<<<<<< HEAD
-          HOVERBOARD.LocalizeBehavior,
-=======
->>>>>>> upstream/master
           HOVERBOARD.UtilsBehavior,
           HOVERBOARD.ShareBehavior,
           HOVERBOARD.MyScheduleBehavior
@@ -290,11 +236,6 @@
             type: Object,
             observer: '_sessionChanged'
           },
-<<<<<<< HEAD
-          fabIcon: {
-            type: String,
-            value: 'calendar-plus'
-=======
 
           fabIcon: {
             type: String,
@@ -304,7 +245,6 @@
           rate: {
             type: Number,
             observer: 'rateSession'
->>>>>>> upstream/master
           }
         },
 
@@ -325,8 +265,6 @@
         },
 
         _sessionChanged: function () {
-<<<<<<< HEAD
-=======
           if (this.app.user) {
             if (!this.app.user.ratings) {
               this.app.user.ratings = {
@@ -337,7 +275,6 @@
             }
             this.set('rate', this.app.user.ratings.sessions[this.session.id] || 0);
           }
->>>>>>> upstream/master
           var generatedClass = this._generateClass(this.session.mainTag);
           this.customStyle['--paper-scroll-header-panel-color'] = 'var(--' + generatedClass + ')';
           this._previousBrowserColor = HOVERBOARD.Util.getMetaThemeColor();
@@ -373,8 +310,6 @@
           }
         },
 
-<<<<<<< HEAD
-=======
         rateSession: function () {
           if (!this.rate) return;
           this.set('app.user.ratings.sessions.' + this.session.id, this.rate);
@@ -396,7 +331,6 @@
           return !online || !user;
         },
 
->>>>>>> upstream/master
         _getMyScheduleIcon: function (id) {
           this.fabIcon = this.isInMySchedule(id) ? 'calendar-check' : 'calendar-plus';
         }

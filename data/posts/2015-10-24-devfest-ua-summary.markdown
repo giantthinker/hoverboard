@@ -1,18 +1,6 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<img src="/images/posts/devfestWest.jpg" style="width: 100%;"/>
-
-[GDG DevFest West Cameroon](https://#) is now over. It was a great success.
-=======
 <img src="/images/posts/summary1.jpg" style="width: 100%;"/>
 
 [GDG DevFest Ukraine 2015](https://devfest.gdg.org.ua/2015/) is now over. It was a great success.
->>>>>>> upstream/master
-=======
-<img src="/images/posts/devfestWest.jpg" style="width: 100%;"/>
-
-[GDG DevFest West Cameroon](https://#) is now over. It was a great success.
->>>>>>> ef15d50c5630519e2d96decc0e6064b0b6c01e6d
  We are happy to share with you some facts, emotions and, of course, photos from the biggest Google Developers Conference in Ukraine!
 
 On behalf of the DFUA’s Team we warmly thank you for helping make [GDG DevFest Ukraine 2015](https://devfest.gdg.org.ua/2015/) a huge success.

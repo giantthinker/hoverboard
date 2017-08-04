@@ -1,10 +1,6 @@
 <link rel="import" href="../../bower_components/polymer/polymer.html">
 
 <link rel="import" href="../styles/shared-styles.html">
-<<<<<<< HEAD
-<link rel="import" href="../behaviors/localize-behavior.html">
-=======
->>>>>>> upstream/master
 
 
 <dom-module id="statistics-block">
@@ -65,16 +61,6 @@
 
     <div class="container">
       <div class="statistics-wrapper">
-<<<<<<< HEAD
-        <template is="dom-repeat" items="[[app.data.statistics]]" as="statistic">
-          <div class="statistics-element">
-            <span class="counter">[[statistic.counter]]</span>
-            <span class="caption">[[localize(statistic.caption)]]</span>
-          </div>
-        </template>
-      </div>
-      <div class="description">[[localize('description')]]</div>
-=======
         {% for statistic in statistics %}
           <div class="statistics-element">
             <span class="counter">{$ statistic.counter $}</span>
@@ -83,7 +69,6 @@
         {% endfor %}
       </div>
       <div class="description">{$ description $}</div>
->>>>>>> upstream/master
     </div>
 
   </template>
@@ -94,15 +79,7 @@
 
       Polymer({
 
-<<<<<<< HEAD
-        is: 'statistics-block',
-
-        behaviors: [
-          HOVERBOARD.LocalizeBehavior
-        ]
-=======
         is: 'statistics-block'
->>>>>>> upstream/master
 
       });
 

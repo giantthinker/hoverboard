@@ -20,10 +20,6 @@
 
 <link rel="import" href="effects/fade-effect.html">
 <link rel="import" href="behaviors/utils-behavior.html">
-<<<<<<< HEAD
-<link rel="import" href="behaviors/localize-behavior.html">
-=======
->>>>>>> upstream/master
 <link rel="import" href="elements/app-data.html">
 <link rel="import" href="elements/drawer-block.html">
 <link rel="import" href="elements/toolbar-block.html">
@@ -116,8 +112,6 @@
       data="{{routeData}}"
       tail="{{subRoute}}"></app-route>
 
-<<<<<<< HEAD
-=======
     <firebase-app
       name="{$ firebase.name $}"
       auth-domain="{$ firebase.domain $}"
@@ -125,34 +119,10 @@
       api-key="{$ firebase.api $}">
     </firebase-app>
 
->>>>>>> upstream/master
     <app-data
       app="{{app}}"
       speakers="{{speakers}}"
       sessions="{{sessions}}"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> ef15d50c5630519e2d96decc0e6064b0b6c01e6d
-      schedule="{{schedule}}"schedule="{{schedule}}"schedule="{{schedule}}"
-      posts="{{posts}}"
-    ></app-data>
-
-    <firebase-app
-      name="[[app.data.firebase.name]]"
-      auth-domain="[[app.data.firebase.domain]]"
-      database-url="[[app.data.firebase.database]]"
-      api-key="[[app.data.firebase.api]]"
-    >
-    </firebase-app>
-    <firebase-auth
-      id="auth"
-      provider="google"
-      app-name="[[app.data.firebase.name]]"
-      user="{{app.user}}"
-    >
-    </firebase-auth>
-=======
       schedule="{{schedule}}"
       posts="{{posts}}"
     ></app-data>
@@ -164,18 +134,12 @@
       user="{{app.user}}"
       status-known="{{_authStatusKnown}}"
     ></firebase-auth>
->>>>>>> upstream/master
 
     <app-drawer-layout id="drawerLayout" drawer-width="599px" force-narrow>
 
       <app-drawer
         id="drawer"
-<<<<<<< HEAD
-        swipe-open="[[app.isPhoneSize]]"
-      >
-=======
         swipe-open="[[app.isPhoneSize]]">
->>>>>>> upstream/master
         <template is="dom-if" if="[[app.isPhoneSize]]">
           <drawer-block
             app={{app}}
@@ -221,44 +185,18 @@
                          app="{{app}}"
                          route="{{subRoute}}"
                          speakers="{{speakers}}"></speakers-page>
-<<<<<<< HEAD
-<<<<<<< HEAD
-            
-=======
 
->>>>>>> upstream/master
-=======
-            
->>>>>>> ef15d50c5630519e2d96decc0e6064b0b6c01e6d
           <schedule-page name="schedule"
                          app="{{app}}"
                          route="{{subRoute}}"
                          schedule="{{schedule}}"
-<<<<<<< HEAD
-<<<<<<< HEAD
-                         sessions="{{sessions}}"></schedule-page>  
-=======
                          sessions="{{sessions}}"></schedule-page>
->>>>>>> upstream/master
-=======
-                         sessions="{{sessions}}"></schedule-page>  
->>>>>>> ef15d50c5630519e2d96decc0e6064b0b6c01e6d
 
           <team-page name="team"
                      app="{{app}}"></team-page>
 
           <cod-page name="cod"
                     app="{{app}}"></cod-page>
-<<<<<<< HEAD
-<<<<<<< HEAD
-            <past-events name="events"
-                         app="{{app}}"></past-events>
-=======
->>>>>>> upstream/master
-=======
-            <past-events name="events"
-                         app="{{app}}"></past-events>
->>>>>>> ef15d50c5630519e2d96decc0e6064b0b6c01e6d
 
         </neon-animated-pages>
       </div>
@@ -289,10 +227,6 @@
         is: 'hoverboard-app',
 
         behaviors: [
-<<<<<<< HEAD
-          HOVERBOARD.LocalizeBehavior,
-=======
->>>>>>> upstream/master
           HOVERBOARD.UtilsBehavior
         ],
 
@@ -302,28 +236,11 @@
             notify: true,
             value: function () {
               return {
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-                lang: 'fr'
-
-=======
                 user: {}
->>>>>>> upstream/master
-=======
-
-                lang: 'fr'
-
->>>>>>> ef15d50c5630519e2d96decc0e6064b0b6c01e6d
               };
             }
           },
 
-<<<<<<< HEAD
-          page: {
-            type: String,
-            reflectToAttribute: true
-=======
           _authStatusKnown: {
             type: Boolean,
             value: false,
@@ -338,16 +255,11 @@
           pages: {
             type: Array,
             value: {$ pages | dump | safe $}
->>>>>>> upstream/master
           }
         },
 
         observers: [
-<<<<<<< HEAD
-          '_routePageChanged(routeData.page, app.data.navigation)',
-=======
           '_routePageChanged(routeData.page)',
->>>>>>> upstream/master
           '_pageChanged(app.page)',
           'stylesChanged(app.headerSettings)'
         ],
@@ -370,17 +282,9 @@
           this.set('app.page', (page || 'home'));
           // Close the drawer - in case the *route* change came from a link in the drawer.
           this.drawerOpened = false;
-<<<<<<< HEAD
-          if (this.app.data) {
-            var navObject = this.app.data.pages[this.app.page];
-            if (navObject && navObject.headerSettings) {
-              this.set('app.headerSettings', navObject.headerSettings);
-            }
-=======
           var navObject = this.pages[this.app.page];
           if (navObject && navObject.headerSettings) {
             this.set('app.headerSettings', navObject.headerSettings);
->>>>>>> upstream/master
           }
         },
 
@@ -446,13 +350,6 @@
         },
 
         signIn: function () {
-<<<<<<< HEAD
-          HOVERBOARD.Elements.Template.$.auth.signInWithPopup();
-        },
-
-        signOut: function () {
-          this.$.auth.signOut();
-=======
           this.$.auth.signInWithPopup()
             .then(function (signInObject) {
               if (navigator.credentials) {
@@ -508,7 +405,6 @@
 
             return this.$.auth.signInWithPopup(provider);
           }.bind(this))();
->>>>>>> upstream/master
         }
 
       });

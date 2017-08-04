@@ -6,10 +6,6 @@
 <link rel="import" href="../../bower_components/paper-input/paper-input.html">
 
 <link rel="import" href="../styles/shared-styles.html">
-<<<<<<< HEAD
-<link rel="import" href="../behaviors/localize-behavior.html">
-=======
->>>>>>> upstream/master
 
 
 <dom-module id="mailchimp-subscribe">
@@ -68,28 +64,17 @@
       >
         <div class="mc-field-group">
           <paper-input-container no-label-float>
-<<<<<<< HEAD
-            <label>[[localize('your-email')]]</label>
-            <input is="iron-input" type="email" name="EMAIL" id="mce-EMAIL" autocomplete="off" />
-          </paper-input-container>
-          <paper-button class="subscribe-button" on-click="submitForm">[[localize('subscribe')]]</paper-button>
-=======
             <label>{$ yourEmail $}</label>
             <input is="iron-input" type="email" name="EMAIL" id="mce-EMAIL" autocomplete="off" />
           </paper-input-container>
           <paper-button class="subscribe-button" on-click="submitForm">{$ subscribe $}</paper-button>
->>>>>>> upstream/master
         </div>
         <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups -->
         <div style="position: absolute; left: -5000px;">
           <input type="text" name="[[ name ]]" tabindex="-1">
         </div>
         <div class="mc-submit-group">
-<<<<<<< HEAD
-          <input type="submit" value$="[[localize('subscribe')]]" name="subscribe" id="mc-embedded-subscribe"
-=======
           <input type="submit" value="{$ subscribe $}" name="subscribe" id="mc-embedded-subscribe"
->>>>>>> upstream/master
                  style="display:none">
         </div>
       </form>
@@ -105,13 +90,6 @@
 
         is: 'mailchimp-subscribe',
 
-<<<<<<< HEAD
-        behaviors: [
-          HOVERBOARD.LocalizeBehavior
-        ],
-
-=======
->>>>>>> upstream/master
         properties: {
           url: {
             type: String

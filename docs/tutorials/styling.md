@@ -67,16 +67,6 @@ in `pages` object. For instance:
 
 ### Web app
 
-<<<<<<< HEAD
-Edit Web app colors in `manifest.json`
-```
-  "background_color": "#F57C00",
-  "theme_color": "#F57C00"
-```
-and in `index.html`
-```
-<meta name="theme-color" content="#F57C00">
-=======
 Edit Web app colors in `hoverboard.config.json`
 ```
   "webapp": {
@@ -84,7 +74,6 @@ Edit Web app colors in `hoverboard.config.json`
       "themeColor": "#F57C00",
       "backgroundColor": "#F57C00"
     }
->>>>>>> upstream/master
 ```
 
 ## Next steps

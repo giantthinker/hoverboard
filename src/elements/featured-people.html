@@ -7,10 +7,6 @@
 
 <link rel="import" href="../styles/shared-styles.html">
 <link rel="import" href="../behaviors/utils-behavior.html">
-<<<<<<< HEAD
-<link rel="import" href="../behaviors/localize-behavior.html">
-=======
->>>>>>> upstream/master
 
 
 <dom-module id="featured-people">
@@ -94,11 +90,7 @@
     </style>
 
     <div class="container">
-<<<<<<< HEAD
-      <h4 class="heading">[[localize('featured-people-title')]]</h4>
-=======
       <h4 class="heading">{$ featuredPeopleTitle $}</h4>
->>>>>>> upstream/master
       <div class="people-wrapper">
         <template is="dom-repeat" items="[[featuredPeople]]" as="person">
           <a href$="/speakers/[[person.id]]" class="person">
@@ -119,11 +111,7 @@
       </div>
       <div>
         <a href="/speakers" class="block-link">
-<<<<<<< HEAD
-          <paper-button>[[localize('featured-people-view-all')]]</paper-button>
-=======
           <paper-button>{$ featuredPeopleViewAll $}</paper-button>
->>>>>>> upstream/master
         </a>
       </div>
     </div>
@@ -139,10 +127,6 @@
         is: 'featured-people',
 
         behaviors: [
-<<<<<<< HEAD
-          HOVERBOARD.LocalizeBehavior,
-=======
->>>>>>> upstream/master
           HOVERBOARD.UtilsBehavior
         ],
 

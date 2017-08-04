@@ -9,9 +9,6 @@ module.exports = {
     '/data/**/*'
   ],
   navigateFallback: '/index.html',
-<<<<<<< HEAD
-=======
   directoryIndex: 'index.html',
->>>>>>> upstream/master
   navigateFallbackWhitelist: [ /^\/[^\_]+\// ]
 };

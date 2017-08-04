@@ -4,11 +4,6 @@
 
 <link rel="import" href="../../bower_components/marked-element/marked-element.html">
 
-<<<<<<< HEAD
-<link rel="import" href="../behaviors/localize-behavior.html">
-
-=======
->>>>>>> upstream/master
 
 <dom-module id="about-block">
 
@@ -58,18 +53,6 @@
 
     <div class="container">
       <div class="about-item">
-<<<<<<< HEAD
-        <h4 class="heading">[[localize('organizer')]]</h4>
-        <marked-element markdown="[[localize('about-organizers')]]">
-          <div class="markdown-html"></div>
-        </marked-element>
-        <a class="page-link" href="/team">[[localize('open-team-page')]]</a>
-      </div>
-      <span class="divider"></span>
-      <div class="about-item">
-        <h4 class="heading">[[localize('what-is-gdg')]]</h4>
-        <marked-element markdown="[[localize('about-gdg')]]">
-=======
         <h4 class="heading">{$ organizerTitle $}</h4>
         <marked-element markdown="{$ aboutOrganizers $}">
           <div class="markdown-html"></div>
@@ -80,7 +63,6 @@
       <div class="about-item">
         <h4 class="heading">{$ whatIsGdg $}</h4>
         <marked-element markdown="{$ aboutGdg $}">
->>>>>>> upstream/master
           <div class="markdown-html"></div>
         </marked-element>
       </div>
@@ -94,15 +76,7 @@
 
       Polymer({
 
-<<<<<<< HEAD
-        is: 'about-block',
-
-        behaviors: [
-          HOVERBOARD.LocalizeBehavior
-        ]
-=======
         is: 'about-block'
->>>>>>> upstream/master
 
       });
 

@@ -1,12 +1,5 @@
 {
   "rules": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    ".read": "auth != null",
-    ".write": "auth != null"
-  }
-}
-=======
     ".read": true,
     ".write": false,
     "ratings": {
@@ -31,10 +24,3 @@
     }
   }
 }
->>>>>>> upstream/master
-=======
-    ".read": "auth != null",
-    ".write": "auth != null"
-  }
-}
->>>>>>> ef15d50c5630519e2d96decc0e6064b0b6c01e6d
