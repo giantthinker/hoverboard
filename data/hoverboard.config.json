@@ -1,5 +1,5 @@
 {
-  "url": "https://hoverboard.firebaseapp.com/",
+  "url": "https://gdgfoumban.org/",
   "startDate": "2016-09-09T09:00:00+03:00",
   "endDate": "2016-09-10T19:00:00+03:00",
   "analytics": {
@@ -7,22 +7,22 @@
     "dev": "UA-43643469-9"
   },
   "organizer": {
-    "name": "GDG Lviv",
-    "twitter": "gdglviv"
+    "name": "GDG Foumban",
+    "twitter": "gdgfoumban"
   },
   "webapp": {
-    "shortName": "DevFest",
+    "shortName": "GDG Foumban webapp",
     "themeColor": "#F57C00",
     "backgroundColor": "#F57C00"
   },
   "firebase": {
-    "name": "hoverboard-experimental",
-    "domain": "hoverboard-experimental.firebaseapp.com",
-    "database": "https://hoverboard-experimental.firebaseio.com",
-    "api": "AIzaSyALDa2D7CMhK_wt2VkET1MaJuQXYVUJd2I",
+    "name": "gdgfoumban",
+    "domain": "gdgfoumban-2016.firebaseapp.com",
+    "database": "https://gdgfoumban-2016.firebaseio.com",
+    "api": "AIzaSyDNSmzmNwbZ4ijvt0Vl7DoqnwlDi5dPDCY",
     "userSessionsPath": "/userSessions",
     "ratingsPath": "/ratings",
-    "indexedDbSession": "hoverboard"
+    "indexedDbSession": "gdgfoumban"
   },
   "mailchimp": {
     "url": "https://gdg.us11.list-manage.com/subscribe/post?u=b7e853a79164ddfdbda3ed77b&amp;id=7993e39fbe",
@@ -32,12 +32,12 @@
     "locale": "en-US",
     "blog": {"month": "short", "day": "numeric", "year": "numeric"}
   },
-  "hashtag": "dfua",
-  "disqusShortName": "hoverboard-gdg-x",
-  "tweetsSource": "/data/tweets.json",
+  "hashtag": "gdgfoumban",
+  "disqusShortName": "gdg-foumban",
+  "tweetsSource": "http://haideholdings.com/tweetledee/favoritesjson.php?cache_interval=300",
   "partnershipProposition": "http://bit.ly/df16-sponsor",
   "videosSessionsUrl": "https://www.youtube.com/playlist?list=PLt8lEzcLNl31AX3-ONkkWmDOZezu9Cmnv",
-  "enableSessionsRating": true,
+  "enableSessionsRating": false,
   "navigation": [
     {
       "route": "home",
@@ -63,8 +63,8 @@
   "social": [
     {
       "name": "twitter",
-      "nickname": "GDGLviv",
-      "url": "https://twitter.com/gdglviv"
+      "nickname": "GDGFoumban",
+      "url": "https://twitter.com/GDGFoumban"
     },
     {
       "name": "gplus",
@@ -73,8 +73,8 @@
     },
     {
       "name": "facebook",
-      "nickname": "GDGLviv",
-      "url": "https://www.facebook.com/GDGLviv"
+      "nickname": "GDGFoumban",
+      "url": "https://www.facebook.com/GDGFoumban"
     },
     {
       "name": "linkedin",
