@@ -37,7 +37,7 @@
   "tweetsSource": "http://haideholdings.com/tweetledee/favoritesjson.php?cache_interval=300",
   "partnershipProposition": "http://bit.ly/df16-sponsor",
   "videosSessionsUrl": "https://www.youtube.com/playlist?list=PLt8lEzcLNl31AX3-ONkkWmDOZezu9Cmnv",
-  "enableSessionsRating": false,
+  "enableSessionsRating": true,
   "navigation": [
     {
       "route": "home",
