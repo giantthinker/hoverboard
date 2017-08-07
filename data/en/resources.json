@@ -1,32 +1,32 @@
 {
   "title": "GDG Foumban",
-  "description": "Google Developers Group (GDG) - est une communauté geek ouverte et bénévole qui crée des projets passionnants et partage l'expérience des technologies Google avec une passion",
+  "description": "GDG Foumban an open community of geeks who learns the Google Technologies and build solutions using these technologies. It's open and free to join. Whether you are a passionate beginner, an experienced developer, a startup or whatever you have, come join and share with an open community.",
   "keywords": "event, gdg, gde, devfest, google, programming, android, chrome, polymer, developers, web, cloud, androiddev, gdgfoumban, gcp, foumban, gdg Cameroun, Cameroon, technology",
   "dates": " ",
   "locationAddressShort": "Foumban, Cameroon",
   "motto": "Be a GDG. Be a Hero!",
   "playIcon": " ",
   "c4p": "Become a speaker",
-  "buyTicket": "joindre",
+  "buyTicket": "Join",
   "backToTop": "Back to top",
   "subscribe": "Subscribe",
   "yourEmail": "Your email",
   "subscribeNote": "No spam, only the latest news and updates!",
-  "contactUs": "Contactez nous",
-  "ticketsTitle": "adhésion",
-  "ticketsDetails": "L'adhésion vous permet d'accéder à nos rencontres, bootcamps, événements et bien d'autres encore, pour vous permettre d'apprendre, d'engager avec d'autres développeurs, de partager vos connaissances et expériences et d'apprendre des autres.",
+  "contactUs": "Contact us",
+  "ticketsTitle": "Membership",
+  "ticketsDetails": "Tickets grant access to all conference sections, coffee breaks, lunch and party. Accommodation is NOT included in the ticket price.",
   "close": "Close",
   "soldOutTickets": "Sold Out",
   "socialTitle": "Social",
-  "socialMotto": "Ajoutez aux cercles, aimez, suivez ou connectez-vous avec nous sur",
-  "beforeHashtag": "Quoi de neuf",
-  "clickToViewPhotos": "Cliquez ici pour voir plus de photos",
-  "partners": "Les partenaires",
-  "becomePartner": "Devenir un partenaire",
+  "socialMotto": "Add to circles, like, follow or connect with us on",
+  "beforeHashtag": "What's up",
+  "clickToViewPhotos": "Click here to view more photos",
+  "partners": "Partners",
+  "becomePartner": "Become a partner",
   "featuredVideosTitle": "Featured #DFUA '15 Sessions",
   "featuredVideosViewAll": "View all videos",
-  "featuredPeopleTitle": "conférencier",
-  "featuredPeopleViewAll": "voir tous les conférencier",
+  "featuredPeopleTitle": "Rockstar Speakers",
+  "featuredPeopleViewAll": "View all speakers",
   "action": "See how it was",
   "locationTitle": "Pivdennyi Expo Center",
   "locationDescription": "Newly built Pivdennyi Expo is a long-awaited exhibition center in Lviv, which can fulfill the needs of the large-scale event",
@@ -35,7 +35,7 @@
   "aboutOrganizers": "<a href='http://lviv.gdg.org.ua' target='_blank'>GDG Lviv</a> with support of 10 GDGs from all around Ukraine is proud organizer of DevFest Ukraine",
   "openTeamPage": "Open team page",
   "whatIsGdg": "What is GDG?",
-  "aboutGdg": "Google Developers Group (GDG) - est une communauté geek ouverte et bénévole qui crée des projets passionnants et partage l'expérience des technologies Google avec une passion",
+  "aboutGdg": "Google Developers Group (GDG) - is open and volunteer geek community who create exciting projects and share experience about Google technologies with a passion",
   "readMore": "Read more",
   "copyLink": "Copy link",
   "filteredBy": "filtered by",
@@ -60,7 +60,7 @@
   "rateSession": "Rate session",
   "footerBlocks": [
     {
-      "title": "Pour les visiteurs",
+      "title": "For visitors",
       "links": [
         {
           "text": "Team",
@@ -78,14 +78,24 @@
           "newTab": true
         },
         {
-          "text": "GDG DevFest Foumban 2017",
-          "url": "http://devfestfoumban.org",
+          "text": "GDG DevFest Ukraine 2013",
+          "url": "http://gdg-devfest-ua.appspot.com/",
+          "newTab": true
+        },
+        {
+          "text": "GDG DevFest Ukraine 2014",
+          "url": "http://devfest.gdg.org.ua/2014/",
+          "newTab": true
+        },
+        {
+          "text": "GDG DevFest Ukraine 2015",
+          "url": "http://devfest.gdg.org.ua/2015/",
           "newTab": true
         }
       ]
     },
     {
-      "title": "Pour les partenaires",
+      "title": "For Partners",
       "links": [
         {
           "text": "Partnership Proposition",
@@ -103,8 +113,8 @@
   "contactBlock": {
     "links": [
       {
-        "text": "gdgfoumban14@gmail.com",
-        "url": "mailto:gdgfoumban14@gmail.com"
+        "text": "devfest@google.com",
+        "url": "mailto:devfest@google.com"
       }
     ]
   },
